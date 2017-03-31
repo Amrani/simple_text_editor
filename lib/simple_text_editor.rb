@@ -6,6 +6,10 @@ module SimpleTextEditor
 		include Operations::BasicPack
 		attr_reader :content, :history, :operations
 
+		def name=(str)
+			@name = str
+		end
+
 		def initialize s = ""
 			@content = s
 			@history = []
